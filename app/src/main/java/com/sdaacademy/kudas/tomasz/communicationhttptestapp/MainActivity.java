@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.sendMessageButton)
     Button sendMessageButton;
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
