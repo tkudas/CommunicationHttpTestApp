@@ -11,11 +11,11 @@ public class TaskDTO {
 
     @SerializedName("id")
     @Expose
-    private long id;
+    private Long id;
 
     @SerializedName("user")
     @Expose
-    private long user;
+    private Long user;
 
     @SerializedName("completed")
     @Expose
@@ -25,18 +25,27 @@ public class TaskDTO {
     @Expose
     private String value;
 
-    public TaskDTO(long id, long user, boolean completed, String value) {
+    public TaskDTO() {
+    }
+
+    public TaskDTO(Long id, long user, boolean completed, String value) {
         this.id = id;
         this.user = user;
         this.completed = completed;
         this.value = value;
     }
 
-    public long getId() {
+    public TaskDTO(Long user, boolean completed, String value) {
+        this.user = user;
+        this.completed = completed;
+        this.value = value;
+    }
+
+    public Long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

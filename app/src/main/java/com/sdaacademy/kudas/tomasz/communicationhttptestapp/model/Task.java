@@ -21,6 +21,12 @@ public class Task {
     @Expose
     private String value;
 
+    public Task() {
+
+    }
+
+
+
     public Task(long id, boolean completed, String value) {
         this.id = id;
         this.completed = completed;

@@ -30,6 +30,10 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
 
     // https://mvnrepository.com/artifact/com.google.code.gson/gson
-    compile group: 'com.google.code.gson', name: 'gson', version: '1.7.2'
+    compile group: 'com.google.code.gson', name: 'gson', version: '2.2.4'
+
+    compile 'org.springframework.android:spring-android-rest-template:2.0.0.M3'
+
+
 
 }
