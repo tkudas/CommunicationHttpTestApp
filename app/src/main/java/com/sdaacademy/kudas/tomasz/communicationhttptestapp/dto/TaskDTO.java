@@ -72,4 +72,14 @@ public class TaskDTO {
     public void setValue(String value) {
         this.value = value;
     }
+
+    @Override
+    public String toString() {
+        return "TaskDTO{" +
+                "id=" + id +
+                ", user=" + user +
+                ", completed=" + completed +
+                ", value='" + value + '\'' +
+                '}';
+    }
 }
