@@ -82,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<TaskDTO> call, Response<TaskDTO> response) {
                 arrayAdapter.add(TaskMaper.TaskDTOToTask(response.body()));
                 arrayAdapter.notifyDataSetChanged();
+                messageText.setText("");
             }
 
             @Override
